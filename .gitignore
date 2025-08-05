@@ -1,0 +1,14 @@
+# Archivos y directorios generados por Leiningen
+.lein-classpath
+.lein-repl-history
+target/
+.nrepl-port
+
+# Directorio de la base de datos local
+db/
+
+# Archivos de configuración de editores comunes
+.idea/
+.vscode/
+*.swp
+*~
