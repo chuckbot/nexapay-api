@@ -12,6 +12,6 @@
                  [buddy/buddy-hashers "2.0.167"]]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]
-  :main ^:skip-aot nexapay-api.core
+  :main nexapay-api.server
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})

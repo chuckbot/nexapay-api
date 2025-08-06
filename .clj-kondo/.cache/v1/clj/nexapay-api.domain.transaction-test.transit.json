@@ -1,0 +1,1 @@
+["^ ","~$test-new-transaction",["^ ","~:row",5,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$nexapay-api.domain.transaction-test","~:top-ns","^7"],"~:filename","/home/chuckbot/ClojureProjects/nexapay-api/test/nexapay_api/domain/transaction_test.clj"]
