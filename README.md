@@ -160,3 +160,31 @@ Once the server is running, you can use Postman, Insomnia, or `curl` to interact
 
 * **Expected Response (Non-existent Accounts):** `400 Bad Request`, `"Error: One or both accounts do not exist."`
 
+## 📊 Access the H2 Console
+
+While the server is running, you can access the H2 database web console to inspect the data:
+
+* **URL:** `http://localhost:8080/h2-console`
+
+* **Driver Class:** `org.h2.Driver`
+
+* **JDBC URL:** `jdbc:h2:./db/nexapay_api` (make sure it matches your `db.clj`)
+
+* **User Name:** `sa`
+
+* **Password:** (leave blank)
+
+* Click **Connect**.
+
+## 🛣️ Next Steps
+
+Future functionalities to implement would include:
+
+* Account balance inquiry.
+
+* Transaction history by account or user.
+
+* More sophisticated error handling.
+
+* JWT implementation for authentication.
+
