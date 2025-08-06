@@ -1,44 +1,57 @@
-# nexapay-api
+# NEXAPAY API: Fintech MVP with Clojure
 
-FIXME: description
+Welcome to the NEXAPAY API MVP! This project is a basic fintech application prototype, built with **Clojure** and adhering to **Hexagonal Architecture (Ports and Adapters)** and **Test-Driven Development (TDD)** principles.
 
-## Installation
+---
 
-Download from http://example.com/FIXME.
+## 🚀 Implemented Features
 
-## Usage
+Currently, this MVP includes the following functionalities:
 
-FIXME: explanation
+* **User Registration:** Allows new users to register securely, including password hashing and automatic creation of an associated account with a zero initial balance.
 
-    $ java -jar nexapay-api-0.1.0-standalone.jar [args]
+* **User Login:** Enables users to authenticate with their credentials.
 
-## Options
+* **Fund Transfer:** Implements the business logic for transferring money between two user accounts. This operation is **atomic** (ensuring all operations complete or none do) and is protected against insufficient funds and non-existent accounts.
 
-FIXME: listing of options this app accepts.
+* **H2 Database:** Uses an in-memory database (H2) for data persistence, ideal for development and testing.
 
-## Examples
+* **Unit and Integration Tests:** All key functionalities are covered by robust tests, following the TDD methodology, to ensure system correctness and reliability.
 
-...
+---
 
-### Bugs
+## 🛠️ Technologies Used
 
-...
+* **Clojure:** The functional programming language on the JVM.
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+* **Leiningen:** Project automation tool for Clojure.
 
-## License
+* **Pedestal:** Web framework for building RESTful APIs.
 
-Copyright © 2025 FIXME
+* **H2 Database:** Lightweight in-memory relational database.
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+* **clojure.java.jdbc:** Clojure interface for JDBC (Java Database Connectivity).
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+* **Honeysql:** Library for programmatically building SQL queries.
+
+* **Buddy Auth & Hashers:** Libraries for authentication, authorization, and password hashing.
+
+---
+
+## ⚙️ Project Setup
+
+Follow these steps to get the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* **Java Development Kit (JDK) 11 or higher:** Clojure runs on the JVM.
+
+* **Leiningen:** You can find installation instructions at [leiningen.org](https://leiningen.org/).
+
+### Clone the Repository
+
+```bash
+git clone <YOUR_REPO_URL> # Replace with your GitHub repo URL
+cd nexapay-api
